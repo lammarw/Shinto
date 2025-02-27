@@ -1,29 +1,29 @@
 /* Basic styles for the HTML elements */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif; /* Default font */
     margin: 0;
     padding: 0;
     background-color: black; /* Fallback background color */
-    background-image: url('Shinto.jpg');
+    background-image: url('images/Shinto.jpg');
     background-size: cover;
     background-position: center;
     color: white; /* Ensure text is white */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     text-align: center;
     flex-direction: column;
 }
 
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
-    font-family: 'Constantia', serif;
+    font-family: 'Georgia', serif; 
 }
 
 p {
     color: #ffffff;
-    font-family: 'Bahnschrift', sans-serif;
+    font-family: 'Times New Roman', serif; 
 }
 
 .wrapper {
@@ -31,19 +31,19 @@ p {
     padding: 20px;
     max-width: 900px;
     width: 100%;
-    height: 100%; /* Ensure the wrapper touches both ends */
+    min-height: 100vh; /* Ensure the wrapper touches both ends */
     box-sizing: border-box;
     text-align: center;
     margin: auto; /* Center the wrapper */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between; /* Ensure footer stays within the wrapper */
     align-items: center;
     outline: 4px solid white; /* Add an outline to the wrapper */
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.884); /* Add a shadow to the wrapper */
 }
 .wrapper img {
-    border: 4px solid rgb(255, 255, 255); /* Add a black border to the image */
+    border: 4px solid rgb(255, 255, 255); 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.89); /* Add a more visible shadow to the image */
 }
 
@@ -57,11 +57,41 @@ nav ul li {
 }
 
 .footer {
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 a {
-    color: white; /* Ensure links are white */
+    font-family: 'Verdana', sans-serif; 
+    color: rgb(255, 74, 74); 
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-top: 1px solid white; /* Make it a line */
+    width: 80%; /* Adjust width as needed */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Add shadow */
+}
+
+hhr {
+    display: block;
+    margin-top: 0.25em; /* Half of hr margin-top */
+    margin-bottom: 0.25em; /* Half of hr margin-bottom */
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-top: 1px solid white; /* Make it a line */
+    width: 40%; /* Half of hr width */
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4); /* Half of hr shadow */
 }
 
 /* Add more styles as needed */
