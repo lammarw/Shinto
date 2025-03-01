@@ -3,26 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entry 3</title>
+    <title>Entry 1</title>
     <link rel="stylesheet" href="../styles.css">
     <style>
         .wrapper {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: space-between; /* Ensure footer stays at the bottom */
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Ensure the wrapper touches both ends */
+            position: relative; /* Ensure absolute positioned elements are contained */
         }
         .footer {
             margin-top: auto;
         }
+        .background-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 8em; /* Reduce font size */
+            color: rgba(255, 255, 255, 0.1); /* Light color for background text */
+            text-shadow: 2px 2px 4px rgba(236, 30, 30, 0.836); /* Add outline */
+            z-index: -1; /* Ensure it stays in the background */
+        }
+        .additional-info {
+            margin-top: 20px;
+            align-self: flex-start;
+            text-align: left; /* Align text to the left */
+        }
+        .additional-info-right {
+            margin-top: 20px;
+            align-self: flex-end;
+            text-align: right;
+            color: rgb(255, 74, 74); /* Make text red */
+        }
+        .image-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-container img {
+            margin: 0 20px; /* Add margin to the left and right of the image */
+        }
     </style>
 </head>
 <body>
+    <div class="background-text">Lorem ipsum</div>
     <div class="wrapper">
-        <!-- Content for entry 3 -->
+        <div class="header">
+            <a href="../main.html">Shinto: Broken Shrine</a>
+        </div>
+        <!-- h1 text on top of the image -->
+        <h1 style="text-align: center; margin-top: 10px;">Template</h1>
+        <!-- Image snark in the middle north with text on left and right -->
+        <div class="image-container">
+            <p style="text-align: left; font-size: smaller; color: white;">Lorem ipsum</p>
+            <img src="../images/snark.png" alt="Snark Image" style="width: 250px; height: auto;">
+            <p style="text-align: right; font-size: smaller; color: rgb(255, 74, 74);">Lorem ipsum</p>
+        </div>
+        <!-- Small text below the snark -->
+        <p style="text-align: center; font-size: smaller; margin-top: 5px;">Lorem ipsum</p>
+        <!-- First Additional Information section on the left -->
+        <div class="additional-info">
+            <h3 style="color: white;">Additional Information</h3>
+            <hr style="margin-top: -10px;">
+            <p style="color: white;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+        <!-- Second Additional Information section on the left -->
+        <div class="additional-info">
+            <h3 style="color: white;">Additional Information</h3>
+            <hr style="margin-top: -10px;">
+            <p style="color: white;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+        <!-- Two more Additional Information sections on the right -->
+        <div class="additional-info-right">
+            <h3 class="red-text">Additional Information</h3>
+            <hr style="margin-top: -10px;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+        <div class="additional-info-right">
+            <h3 class="red-text">Additional Information</h3>
+            <hr style="margin-top: -10px;">
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            </p>
+        </div>
+        <!-- Content for entry 1 -->
         <div class="footer">
-            <a href="../index.html" class="back-to-index">Back to Index</a>
+            <a href="../main.html" class="back-to-index">Back to Main</a>
         </div>
     </div>
 </body>
