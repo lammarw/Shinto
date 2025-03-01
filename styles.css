@@ -17,7 +17,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #ffffff;
+    color: rgb(255, 74, 74); /* Make text red */
     font-family: 'Georgia', serif; 
 }
 
@@ -41,10 +41,33 @@ p {
     align-items: center;
     outline: 4px solid white; /* Add an outline to the wrapper */
     box-shadow: 0 20px 25px rgba(0, 0, 0, 0.884); /* Add a shadow to the wrapper */
+    position: relative; /* Ensure absolute positioned elements are contained */
+    flex-grow: 1; /* Ensure the wrapper grows to fill the available space */
 }
 .wrapper img {
     border: 4px solid rgb(255, 255, 255); 
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.89); /* Add a more visible shadow to the image */
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(12, 7, 7, 0.9); /* Match wrapper background */
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8); /* Add shadow */
+    margin-top: -5px; /* Make the header rise slightly above the page */
+    margin-bottom: 10px; /* Add space below the header */
+}
+
+.header a {
+    font-family: 'Georgia', serif;
+    color: rgb(255, 74, 74); /* Make text red */
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: none; /* Remove underline on hover */
 }
 
 nav ul {
@@ -92,6 +115,10 @@ hhr {
     border-top: 1px solid white; /* Make it a line */
     width: 40%; /* Half of hr width */
     box-shadow: 0 2.5px 5px rgba(0, 0, 0, 0.4); /* Half of hr shadow */
+}
+
+.red-text {
+    color: rgb(255, 74, 74); /* Make text red */
 }
 
 /* Add more styles as needed */
