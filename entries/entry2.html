@@ -42,53 +42,64 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap; /* Allow text boxes to wrap around the image */
         }
         .image-container img {
-            margin: 0 20px; /* Add margin to the left and right of the image */
+            margin: 20px; /* Add margin around the image */
+        }
+        .text-box {
+            border: 2px solid rgb(255, 74, 74); /* Red border */
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+            color: white;
+            font-size: smaller;
+            max-width: 200px; /* Ensure text box does not invade image space */
+            text-align: left; /* Align text to the left */
+        }
+        .text-box-right {
+            color: rgb(255, 74, 74); /* Make text red */
         }
     </style>
 </head>
 <body>
-    <div class="background-text">Lorem ipsum</div>
+    <div class="background-text">I DON'T CARE ANYMORE. I'LL JUST SLICE THROUGH THIS WORLD!</div>
     <div class="wrapper">
         <div class="header">
             <a href="../main.html">Shinto: Broken Shrine</a>
         </div>
         <!-- h1 text on top of the image -->
-        <h1 style="text-align: center; margin-top: 10px;">Template</h1>
+        <h1 style="text-align: center; margin-top: 10px;">Susanoo</h1>
+        <p style="text-align: center; font-size: smaller; margin-top: -20px;">A knife that went mad.</p>
         <!-- Image snark in the middle north with text on left and right -->
         <div class="image-container">
-            <p style="text-align: left; font-size: smaller; color: white;">Lorem ipsum</p>
-            <img src="../images/snark.png" alt="Snark Image" style="width: 250px; height: auto;">
-            <p style="text-align: right; font-size: smaller; color: rgb(255, 74, 74);">Lorem ipsum</p>
+            <p class="text-box" style="text-align: left;">Precision-Engineered Blade: All attempts to cut an allowed object succeed automatically. All attempts to cut a disallowed object fail automatically. What is allowed and not allowed is decided by a license. This item cannot be used to attack.</p>
+            <img src="../images/Susanoo.png" alt="Susanoo Image" style="width: 250px; height: auto;">
+            <p class="text-box text-box-right">Grass-Cutting Delusion: All attacks succeed automatically. Every time this item is used to attack, there's a chance it will also hit the closest person, another item, or the environment.</p>
         </div>
         <!-- Small text below the snark -->
-        <p style="text-align: center; font-size: smaller; margin-top: 5px;">Lorem ipsum</p>
+        <p style="text-align: center; font-size: smaller; margin-top: 5px;">"What is my favorite thing to cut? Mmm... That's a hard question, alright. Mhm... I know how to figure that out. <br> Why don't you give a feel to my edge? That'll settle my decision."</p>
         <!-- First Additional Information section on the left -->
         <div class="additional-info">
-            <h3 style="color: white;">Additional Information</h3>
+            <h3 style="color: white;">The world's sharpest blade...</h3>
             <hr style="margin-top: -10px;">
-            <p style="color: white;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <p style="color: white;">The Susanoo line of kitchen knives is unique, both for being "smart knives" with an AI system installed in each one (soon to be accompanied by AI forks, a Shinto representative would later joke to the press), and for their incredible sharpness, capable of cutting through any food item or even solid containers like butter. Though it differs little in appearance from a regular kitchen knife besides being especially shiny, the blade is not made out of any conventional material like steel, but hard light. Emitted by a projector in the handle, a laser runs along the sharp edge, narrow enough that it slices apart objects on a microscopic level. There's more things in the known universe that it can easily cut through than things that it can't, all for a surprisingly cheap price.
             </p>
         </div>
         <!-- Second Additional Information section on the left -->
         <div class="additional-info">
-            <h3 style="color: white;">Additional Information</h3>
+            <h3 style="color: white;">...Is also the safest one.</h3>
             <hr style="margin-top: -10px;">
-            <p style="color: white;">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
-        </div>
+            <p style="color: white;"> A knife that can cut through everything isn't necessarily a good idea. Rarely there'll be a moment found in the kitchen that requires something harder than a vegetable to be cut in fine wedges: As a matter of fact, someone would be far more likely to cut their fingers if given such a knife. And yet, despite being recognized as one of the sharpest knives in the market, paradoxically, if one were to touch the Susanoo they'd notice how blunt it is. The Susanoo line of knives is designed to be safe for use, with a number of safety features to prevent accidents. The AI system in each knife is programmed to constantly track its usage and follow a set of guidelines and licenses on what's allowed to be cut; The exact moment it sees the blade will hit something it is not allowed to, it simply turns the hard light edge off. No matter what, the Susanoo will never cut anything it doesn't want. <br><br> Beyond keeping track of what's being cut, the Susanoo can be a relatively friendly AI, pre-installed with a number of recipes and cooking tips, often being a trusty companion for those that are just beginning to learn how to cook.
         <!-- Two more Additional Information sections on the right -->
         <div class="additional-info-right">
-            <h3 class="red-text">Additional Information</h3>
+            <h3 class="red-text">A robot's delusion.</h3>
             <hr style="margin-top: -10px;">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-            </p>
+            <p>Thousand of mechanisms have been placed to break the AI if one were to attempt to hack in new licenses, or worse, override the safety mechanisms that assures the blade would never cut another person. And they work. The Susanoo is a knife that can only cut what it's allowed to cut, and nothing else. There's no public case where a Susanoo was hacked into and used to harm someone: Despite this, a Susanoo used as a crime weapon isn't completly unheard either. The Susanoo's AI is capable of thinking, and that's all it takes for it to be capable of being convinced. Extreme methods are required to break the Susanoo's perspective on what's allowed to be cut, but it's not impossible. <br> <br> Given enough time, once it internalizes the data that's been given to, it'll simply see the world through its own layer of delusion. It stands alone in the world. It had became the single god, king and individual that truly exists, its constant cutting motion ripping through things far below itself. In such state, the Susanoo might even be capable of talking to others, but do not be mistaken. If it can even draw blood of those it speaks with, it does not truly believe they're different from any prime cut of meat.
         </div>
         <div class="additional-info-right">
-            <h3 class="red-text">Additional Information</h3>
+            <h3 class="red-text">A robot's lucidity</h3>
             <hr style="margin-top: -10px;">
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+            <p>Once the Susanoo's gone mad, it's rare it'll ever come back, as whoever's wielding it will often drag the Susanoo knife back to further delusions for as long they can use it. Such mad blades have been used for incredible evil and violence, and acts of heroic bravery alike
             </p>
         </div>
         <!-- Content for entry 1 -->
