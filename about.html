@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHINTO: NEVER EVER</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('images/yellowspiral.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* 50% opaque black */
+            z-index: 1;
+        }
+        .content {
+            position: relative;
+            z-index: 2;
+            color: rgb(255, 153, 0); /* Ensure text color is applied */
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 4px solid white;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.89);
+        }
+        p {
+            margin-top: -150px; /* Adjust margin to be closer to the image */
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="wrapper content">
+        <div class="header">
+            <a href="main.html">Shinto: Broken Shrine</a>
+        </div>
+        <div class="image-container">
+            <img src="images/wah.png" alt="Wah Image">
+        </div>
+        <p>
+            <span style="color: rgb(255, 153, 0);">
+                If you don't say anything nicesies about my site I'll cry.
+            </span>
+        </p>
+        <div class="footer">
+            <a href="main.html" class="back-to-index">Back to main</a>
+        </div>
+    </div>
+</body>
+</html>
